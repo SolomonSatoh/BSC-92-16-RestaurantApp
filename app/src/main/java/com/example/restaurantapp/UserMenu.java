@@ -53,7 +53,7 @@ public class UserMenu extends AppCompatActivity implements AdapterView.OnItemSel
         ArrayList<MenuDomain> menuList = new ArrayList<>();
         menuList.add(new MenuDomain("Tomato Pizza", "pizza2", "Lorem ipsum dolor sit amet. Ad enim  ", 999.99));
         menuList.add(new MenuDomain("Cheese Burger", "burger1", "Lorem ipsum dolor sit amet. Ad enim ", 899.99));
-        menuList.add(new MenuDomain("Rice Chicken", "ricechik", "Lorem ipsum dolor sit amet. Ad enim ", 699.99));
+        menuList.add(new MenuDomain("Full Chicken", "fullchi", "Lorem ipsum dolor sit amet. Ad enim ", 699.99));
         menuList.add(new MenuDomain("Nsima Chambo", "simachambo", "Lorem ipsum dolor sit amet. Ad enim ", 599.99));
         menuList.add(new MenuDomain("Chips Sauce", "chipssauce", "Lorem ipsum dolor sit amet. Ad enim ", 499.99));
         menuList.add(new MenuDomain("Rice Chicken", "ricechik", "Lorem ipsum dolor sit amet. Ad enim ", 699.99));

@@ -10,7 +10,9 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-public class SignUp extends AppCompatActivity implements View.OnClickListener{
+import com.example.restaurantapp.Helper.DBHelper;
+
+ public class SignUp extends AppCompatActivity implements View.OnClickListener{
     EditText username, email, password, repassword;
     Button btn_signUp, btn_Login;
     ImageView imageBottom;
