@@ -11,7 +11,6 @@
         android:theme="@style/Theme.RestaurantApp">
         <activity android:name=".ShowDetails"></activity>
         <activity android:name=".UserMenu" />
-        <activity android:name=".MealDescription" />
         <activity android:name=".AdminMenu" />
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -20,7 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Menu" />
         <activity android:name=".EmployeeLogin" />
         <activity android:name=".SignUp" />
         <activity android:name=".Login" />

@@ -8,15 +8,10 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.restaurantapp.Domain.CategoryDomain;
 import com.example.restaurantapp.Domain.MenuDomain;
-import com.example.restaurantapp.MealDescription;
-import com.example.restaurantapp.Menu;
 import com.example.restaurantapp.R;
 import com.example.restaurantapp.ShowDetails;
 
