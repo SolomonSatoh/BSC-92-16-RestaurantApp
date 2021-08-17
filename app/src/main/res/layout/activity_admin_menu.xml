@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/conts_color"
+    android:orientation="vertical"
+    tools:context=".AdminMenu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/teal_200">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Welcome Admin"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtLogout"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="Logout"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-light"
+            android:textColor="@color/white"
+             />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+
+        <Button
+            android:id="@+id/inventory"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="50dp"
+            android:text="@string/add_inventory_item"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:backgroundTint="#C9B33F"
+            />
+        <Button
+        android:id="@+id/menuItem"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/add_menu_item"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        app:backgroundTint="#C9B33F"
+            android:textColor="@color/black"
+        />
+
+        <Button
+            android:id="@+id/addEmployee"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="ADD EMPLOYEE"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            app:backgroundTint="#C9B33F"
+            android:textColor="@color/black"
+            />
+
+        <Button
+            android:id="@+id/Ingredients"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="VIEW INGREDIENTS"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            app:backgroundTint="#C9B33F"
+            
+            />
+
+        <Button
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="ADD TABLE"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            app:backgroundTint="#C9B33F"
+            />
+
+        <Button
+            android:id="@+id/notification"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="SEND NOTIFICATION"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            app:backgroundTint="#C9B33F"
+            />
+
+        <Button
+            android:id="@+id/endOfWeek"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:text="SET END OF WEEK"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            app:backgroundTint="#C9B33F"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageBottom"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/botton_bg"
+        android:backgroundTint="@color/teal_200"
+        android:src="@drawable/ic_baseline_home_24" />
+
+
+</LinearLayout>

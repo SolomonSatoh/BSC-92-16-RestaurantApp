@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">RestaurantApp</string>
+    <string name="restaurant_app">Restaurant App</string>
+    <string name="title_activity_login_form">LoginForm</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_login">Login</string>
+    <string name="full_name">Full Name</string>
+    <string name="user_name"> User Name</string>
+    <string name="enter_email">Email</string>
+    <string name="enter_password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="choose_your_delicious_food">Choose Your delicious Meal</string>
+    <string name="add_inventory_item">ADD INVENTORY ITEM</string>
+    <string name="add_menu_item">ADD MENU ITEM</string>
+    <string name="title_e_g_admin_or_kitchen_manager"> Add your title</string>
+    <string name="nsima">Nsima</string>
+    <string name="fried_chicken">Fried Chicken</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consectetur_adipiscing_elit">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="email_or_username">email or username</string>
+
+    <string-array name="places">
+        <item>Work Place</item>
+        <item>Home</item>
+        <item>Market place</item>
+        <item>School</item>
+    </string-array>
+    <string-array name="Title">
+        <item>Chef</item>
+        <item>Waiter</item>
+        <item>Hall Manager</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
