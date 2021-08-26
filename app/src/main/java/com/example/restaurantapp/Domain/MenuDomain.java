@@ -7,7 +7,8 @@ public class MenuDomain implements Serializable {
     private String pic;
     private String description;
     private Double price;
-    private String numberInCard;
+    private int numberInCard;
+
 
     public MenuDomain(String title, String pic, String description, Double price) {
         this.title = title;
@@ -16,12 +17,13 @@ public class MenuDomain implements Serializable {
         this.price = price;
     }
 
-    public MenuDomain(String title, String pic, String description, Double price, String numberInCard) {
+    public MenuDomain(String title, String pic, String description, Double price, int numberInCard) {
         this.title = title;
         this.pic = pic;
         this.description = description;
         this.price = price;
         this.numberInCard = numberInCard;
+
     }
 
     public String getTitle() {
@@ -56,11 +58,11 @@ public class MenuDomain implements Serializable {
         this.price = price;
     }
 
-    public String getNumberInCard() {
+    public int getNumberInCard() {
         return numberInCard;
     }
 
-    public void setNumberInCard(String numberInCard) {
+    public void setNumberInCard(int numberInCard) {
         this.numberInCard = numberInCard;
     }
 }

@@ -1,9 +1,5 @@
 package com.example.restaurantapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -13,10 +9,15 @@ import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.example.restaurantapp.Adapter.CategoryAdapter;
 import com.example.restaurantapp.Adapter.PopularAdapter;
 import com.example.restaurantapp.Domain.CategoryDomain;
 import com.example.restaurantapp.Domain.MenuDomain;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
@@ -43,7 +44,30 @@ public class UserMenu extends AppCompatActivity implements AdapterView.OnItemSel
         
         recyclerViewCategory();
         recyclerViewPopular();
+        bottomNavigation();
+
+
     }
+
+    private void bottomNavigation() {
+        FloatingActionButton floatingActionButton = findViewById(R.id.card_btn);
+        LinearLayout homeBtn = findViewById(R.id.homeBtn);
+
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserMenu.this, CardList.class));
+            }
+        });
+
+        homeBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(UserMenu.this, UserMenu.class));
+            }
+        });
+    }
+
 
     private void recyclerViewPopular() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false );
@@ -90,6 +114,7 @@ public class UserMenu extends AppCompatActivity implements AdapterView.OnItemSel
     public void onNothingSelected(AdapterView<?> parent) {
 
     }
+
 
     @Override
     public void onClick(View view) {
