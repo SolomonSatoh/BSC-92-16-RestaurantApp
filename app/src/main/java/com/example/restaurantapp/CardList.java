@@ -1,9 +1,7 @@
 package com.example.restaurantapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
@@ -14,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.restaurantapp.Adapter.CardListAdapter;
 import com.example.restaurantapp.Helper.CardManager;
 import com.example.restaurantapp.Interface.ChangeNumberItemsListener;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CardList extends AppCompatActivity {
     private RecyclerView.Adapter adapter;
@@ -34,28 +31,10 @@ public class CardList extends AppCompatActivity {
         initView();
         initList();
         calculateCard();
-        bottomNavigation();
     }
 
 
-    private void bottomNavigation() {
-        FloatingActionButton floatingActionButton = findViewById(R.id.card_btn);
-        LinearLayout homeBtn = findViewById(R.id.homeBtn);
 
-        floatingActionButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CardList.this, CardList.class));
-            }
-        });
-
-        homeBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(CardList.this, UserMenu.class));
-            }
-        });
-    }
 
     private void initList() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
