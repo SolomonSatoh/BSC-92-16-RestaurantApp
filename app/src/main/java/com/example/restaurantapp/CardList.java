@@ -1,9 +1,11 @@
 package com.example.restaurantapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,11 +15,11 @@ import com.example.restaurantapp.Adapter.CardListAdapter;
 import com.example.restaurantapp.Helper.CardManager;
 import com.example.restaurantapp.Interface.ChangeNumberItemsListener;
 
-public class CardList extends AppCompatActivity {
+public class CardList extends AppCompatActivity implements  View.OnClickListener {
     private RecyclerView.Adapter adapter;
     private RecyclerView recyclerViewList;
     private CardManager managementCart;
-    private TextView totalFeeTxt, taxTxt, deliveryTxt, totalTxt, emptyTxt;
+    private TextView totalFeeTxt, taxTxt, deliveryTxt, totalTxt, emptyTxt, confirmOrder;
     private double tax;
     private ScrollView scrollView;
 
@@ -26,7 +28,12 @@ public class CardList extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card_list);
 
+        confirmOrder = (TextView)  findViewById(R.id.orderBtn);
+
+
         managementCart = new CardManager(this);
+        confirmOrder.setOnClickListener(this);
+
 
         initView();
         initList();
@@ -77,5 +84,21 @@ public class CardList extends AppCompatActivity {
         totalTxt = findViewById(R.id.totalTxt);
         emptyTxt = findViewById(R.id.emptyTxt);
         scrollView = findViewById(R.id.scrollView4);
+    }
+
+    @Override
+    public void onClick(View view) {
+        switch (view.getId()){
+
+            case R.id.orderBtn:
+                Toast.makeText(CardList.this, "Your order was successful! Check your Email.", Toast.LENGTH_SHORT).show();
+                Intent intentOrder= new Intent(CardList.this,UserMenu.class);
+                startActivity(intentOrder);
+
+                break;
+
+
+        }
+
     }
 }
